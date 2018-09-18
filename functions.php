@@ -16,3 +16,11 @@
  *Your code goes below
  */
 
+if ( ! function_exists( 'st_blog_additional_class' ) ) {
+    function st_blog_additional_class($id) {
+        //  Do something.
+ 		if($id == 'st-blog-featured') {
+			return 'featured-layout-2';
+		}       
+    }
+}

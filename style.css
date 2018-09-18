@@ -3,5 +3,38 @@
  * Author:         salient Themes
  * Template:       st-blog
  * Text Domain:	   blog-times
- * Description:    ST Blog, your new clean and minimal blogging WordPress theme. It
+ * Description:    Blog Times is a ST Blog Child Theme.
  */
+/* Featured Content - Featured Layout 2 */
+#st-blog-featured.featured-layout-2 .st-blog-featured-item {
+  position: relative;
+}
+#st-blog-featured.featured-layout-2 .st-blog-featured-item .st-blog-featured-caption {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  width: 100%;
+  color: #ffffff !important;
+  padding: 20px;
+}
+#st-blog-featured.featured-layout-2 .st-blog-featured-item .st-blog-featured-caption p {
+  display: none;
+}
+#st-blog-featured.featured-layout-2 .st-blog-featured-item .st-blog-featured-caption a {
+  color: #fff !important;
+}
+#st-blog-featured.featured-layout-2 .st-blog-featured-item .st-blog-featured-image,
+#st-blog-featured.featured-layout-2 .st-blog-featured-item .st-blog-featured-image img {
+  margin: 0;
+}
+#st-blog-featured.featured-layout-2 .st-blog-featured-item .st-blog-featured-image {
+  background-color: #000;
+}
+#st-blog-featured.featured-layout-2 .st-blog-featured-item .st-blog-featured-image img {
+  opacity: 0.6;
+}
+
+/*# sourceMappingURL=style.css.map */
