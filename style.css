@@ -5,6 +5,23 @@
  * Text Domain:	   blog-times
  * Description:    Blog Times is a ST Blog Child Theme.
  */
+/* Navigation */
+body.logo-center.big-logo-enable nav#site-navigation {
+  background-color: #000000;
+}
+
+body.logo-center nav#site-navigation ul.nav-menu > li > a, body.logo-center nav#site-navigation ul.menu > li > a, body.logo-center nav#site-navigation ul#menu > li > a {
+  color: #fff;
+}
+
+.st-blog-header-wrap .st-blog-header-wrap-nav .st-blog-head-search-toggler {
+  color: #ffffff;
+}
+
+body.logo-center .st-blog-header-row .st-blog-logo-manage {
+  padding-bottom: 20px;
+}
+
 /* Featured Content - Featured Layout 2 */
 #st-blog-featured.featured-layout-2 .st-blog-featured-item {
   position: relative;

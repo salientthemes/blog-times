@@ -16,6 +16,14 @@
  *Your code goes below
  */
 
+// for header, navigation alignment
+if( ! function_exists('st_blog_header_alignment') ) {
+	function st_blog_header_alignment() {
+		return 'nav_first';//header_first, nav_first
+	}
+}
+
+// for additional support
 if ( ! function_exists( 'st_blog_additional_class' ) ) {
     function st_blog_additional_class($id) {
         //  Do something.
@@ -24,3 +32,4 @@ if ( ! function_exists( 'st_blog_additional_class' ) ) {
 		}       
     }
 }
+
