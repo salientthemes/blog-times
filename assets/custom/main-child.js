@@ -3,7 +3,7 @@
 		// easy ticker
 		var dd = $('.st-blog-vticker').easyTicker({
 			direction: 'up',
-			interval: 2000,
+			interval: 4000,
 			height: 'auto',
 			visible: 1,
 			mousePause: 0,
