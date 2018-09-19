@@ -230,6 +230,17 @@ aside .widget .widget {
   padding-top: 30px;
 }
 
+.pagination {
+  display: block;
+}
+
+.pagination .nav-links,
+.wp-pagenavi {
+  margin: 0;
+  float: right;
+  display: block;
+}
+
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next,
@@ -288,6 +299,10 @@ a {
 
 a.readmore:hover, .readmore:hover, .nav-tabs .nav-item .nav-link {
   color: #fff;
+}
+
+#primary {
+  max-width: 100%;
 }
 
 /* Three Column */
