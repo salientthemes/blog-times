@@ -9,6 +9,8 @@
   function blog_times_style() {
 	wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
 	wp_enqueue_style( 'child-style',get_stylesheet_directory_uri() . '/style.css',array('parent-style'));
+	
+	wp_enqueue_script( 'blog-times-main', get_stylesheet_directory_uri() . '/assets/custom/main-child.js', array('jquery'), true );
 }
 
 

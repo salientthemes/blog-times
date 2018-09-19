@@ -5,6 +5,13 @@
  * Text Domain:	   blog-times
  * Description:    Blog Times is a ST Blog Child Theme.
  */
+/* Header Overlay */
+.st-blog-header-overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
 /* Navigation */
 body.logo-center.big-logo-enable nav#site-navigation {
   background-color: #000000;
@@ -22,6 +29,32 @@ body.logo-center nav#site-navigation ul#menu > li > a {
 
 body.logo-center .st-blog-header-row .st-blog-logo-manage {
   padding-bottom: 20px;
+}
+
+/* Hide header on page scroll */
+body.fixed-header .site-header {
+  position: absolute;
+}
+
+body.small-header .site-header {
+  position: fixed;
+}
+
+body.small-header .site-header .st-blog-header-bg {
+  display: none;
+}
+
+body.logo-center.small-header .site-header .st-blog-header-wrap-nav {
+  transition: 0.4s all ease-in-out;
+}
+
+body.logo-center.small-header .site-header.nav-down .st-blog-header-wrap-nav {
+  transform: translate(0, 0);
+}
+
+body.logo-center.small-header .site-header.nav-up .st-blog-header-wrap-nav {
+  transform: translate(0, -100%);
+  transition: 0s all ease-in-out;
 }
 
 /* Banner */
@@ -42,6 +75,9 @@ section#st-blog-banner .slick-slider {
   background-image: none !important;
   background-color: #ffffff;
   height: auto;
+}
+#st-blog-banner .st-blog-banner-slider .slick-slide .st-blog-banner-image .st-blog-banner-image-link {
+  display: block !important;
 }
 #st-blog-banner .st-blog-banner-slider .slick-slide .st-blog-banner-image img {
   width: 100%;
@@ -73,6 +109,7 @@ section#st-blog-banner .slick-slider {
 
 #st-blog-banner .st-blog-banner-slider .st-blog-overlay:after {
   background-color: transparent !important;
+  display: none;
 }
 
 #st-blog-banner .st-blog-banner-slider .slick-slide .st-blog-banner-image .st-blog-banner-caption .st-blog-title {
