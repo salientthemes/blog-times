@@ -16,7 +16,6 @@ if ( !function_exists('st_blog_additional_section_main') ) :
 
         global $st_blog_customizer_all_values;
         $blog_times_slecet_category_post =  $st_blog_customizer_all_values['blog-times-ticker-category-post'];
-        // var_dump($blog_times_slecet_category_post);die('k vo');
 
         if( 1 == $st_blog_customizer_all_values['blog-times-enable-ticker'] ) { ?>
             <div class="additional-sections">
@@ -27,22 +26,23 @@ if ( !function_exists('st_blog_additional_section_main') ) :
                             'post_type'           =>'post',
                             'posts_per_page'       => 5,
                             'cat'                 => absint($blog_times_slecet_category_post),
-                            'ignore_sticky_posts' => true
-
-
+                            'orderby'             => 'DESC',  
+                            'ignore_sticky_posts' => 1
                         );
                     } ?>
                     
                     <div class="st-blog-vticker">
                         <ul>
                         <?php
-                        $ticker_category = new WP_Query($blog_times_slecet_category_post);
-                        if(  $ticker_category -> have_posts() ){
-                            while($ticker_category -> have_posts() ){
-                                $ticker_category -> the_post(); ?>
-                            <li><a href="<?php the_permalink();?>"><?php the_title();?></a></li>
-                            <?php }
-                        }  ?>
+                            $ticker_category = new WP_Query($cat_post_array);
+                            if(  $ticker_category->have_posts() ) :
+                                while($ticker_category->have_posts() ) :
+                                    $ticker_category->the_post(); ?>
+                                    <li><a href="<?php the_permalink();?>"><?php the_title();?></a></li>
+                                <?php endwhile;
+                                wp_reset_postdata();
+                            endif;
+                          ?>
                         </ul>
                             
                     </div>
