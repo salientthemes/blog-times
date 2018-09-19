@@ -171,8 +171,13 @@ body {
 
 /* Widget */
 aside .widget {
-  background: #fff;
+  background-color: #ffffff;
   padding: 15px;
+}
+
+footer aside .widget {
+  background-color: transparent;
+  padding: 0;
 }
 
 aside ul {
@@ -181,6 +186,23 @@ aside ul {
 
 aside ul li:last-child {
   margin-bottom: 0;
+}
+
+.st-blog-vticker-wrap {
+  background-color: #ffffff;
+  margin-bottom: 30px;
+  padding: 8px 15px;
+}
+.st-blog-vticker-wrap .st-blog-vticker:before {
+  content: '\f0a1';
+  font-family: 'Font Awesome\ 5 Free';
+  font-weight: 900;
+}
+.st-blog-vticker-wrap .st-blog-vticker ul {
+  padding-left: 28px;
+}
+.st-blog-vticker-wrap .st-blog-vticker ul li {
+  list-style: none;
 }
 
 /* Featured Content - Featured Layout 2 */
