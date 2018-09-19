@@ -48,6 +48,7 @@ $st_blog_settings_controls['st-blog-default-layout'] = array(
         'choices' => array(
             'right-sidebar'     => esc_html__( 'Content - Primary Sidebar', 'st-blog' ),
             'left-sidebar'      => esc_html__( 'Primary Sidebar - Content', 'st-blog' ),
+            'both-sidebar'      => esc_html__( 'Three Columns  - Content', 'st-blog' ),
             'no-sidebar'        => esc_html__( 'No Sidebar', 'st-blog' )
         ),
         'priority'              => 20,
@@ -94,22 +95,21 @@ $st_blog_settings_controls['st-blog-archive-layout'] = array(
     )
 );
 
-$st_blog_settings_controls['st-blog-default-body-layout'] =
-        array(
-            'setting' =>     array(
-                'default'              => $st_blog_customizer_defaults['st-blog-default-body-layout'],
-            ),
-            'control' => array(
-                'label'                 =>  esc_html__( 'Blog Post Layout', 'st-blog' ),
-                'section'               => 'st-blog-back-all-theme-setting',
-                'type'                  => 'select',
-                'choices'               => array(
-                    'boxed'         => esc_html__( 'Grid Layout', 'st-blog' ),
-                    'full-width'    => esc_html__( 'Full Width Layout', 'st-blog' ),
-                ),
-                'priority'              => 70,
-                'active_callback'       => ''
-            )
-        );
+$st_blog_settings_controls['st-blog-default-body-layout'] = array(
+    'setting' =>     array(
+        'default'              => $st_blog_customizer_defaults['st-blog-default-body-layout'],
+    ),
+    'control' => array(
+        'label'                 =>  esc_html__( 'Blog Post Layout', 'st-blog' ),
+        'section'               => 'st-blog-back-all-theme-setting',
+        'type'                  => 'select',
+        'choices'               => array(
+            'boxed'         => esc_html__( 'Grid Layout', 'st-blog' ),
+            'full-width'    => esc_html__( 'Full Width Layout', 'st-blog' ),
+        ),
+        'priority'              => 70,
+        'active_callback'       => ''
+    )
+);
 
 
