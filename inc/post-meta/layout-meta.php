@@ -49,6 +49,7 @@ $st_blog_default_layout_options = array(
         'thumbnail' => get_template_directory_uri() . '/inc/images/no-sidebar.png'
     )
 );
+
 /* st-blog featured layout */
 $st_blog_single_post_image_align_options = array(
     'full' => array(
