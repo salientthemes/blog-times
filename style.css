@@ -10,12 +10,6 @@
  * Tags:           custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, left-sidebar, right-sidebar, custom-header, blog, e-commerce, theme-options
  */
 /* Header Overlay */
-.st-blog-header-overlay {
-  background-color: rgba(0, 0, 0, 0.5);
-  padding-top: 50px;
-  padding-bottom: 50px;
-}
-
 /* Navigation */
 body.logo-center .st-blog-header-row .st-blog-logo-manage {
   padding-bottom: 20px;
@@ -25,13 +19,6 @@ body.logo-center .st-blog-header-row .st-blog-logo-manage {
   /* nav */
   body.logo-center.big-logo-enable nav#site-navigation {
     background-color: #000000;
-  }
-
-  body.logo-center nav#site-navigation ul.nav-menu > li > a,
-  body.logo-center nav#site-navigation ul.menu > li > a,
-  body.logo-center nav#site-navigation ul#menu > li > a,
-  .st-blog-header-wrap .st-blog-header-wrap-nav .st-blog-head-search-toggler {
-    color: #ffffff;
   }
 
   /* Hide header on page scroll */

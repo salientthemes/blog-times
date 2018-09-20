@@ -98,29 +98,18 @@ if( ! function_exists( 'st_blog_inline_style' ) ) :
         	border-color: <?php echo esc_attr( $st_blog_primary_color_option ) ;?>;
         }  
         <?php
-        } 
-        if( !empty($st_blog_site_identity_color_option) ){
-        ?>
-            /*Site identity / logo & tagline*/
-            .site-branding a,
-            .site-branding p,
-            .site-branding p a {
-              color: <?php echo esc_attr( $st_blog_site_identity_color_option );?>;
-            }
-        <?php
-        }
-
-        
+        }        
             
         if( !empty($st_blog_menu_text_color) )
         {?>
-        	nav#site-navigation ul a,
-            .st-blog-header-wrap .st-blog-header-wrap-nav .st-blog-head-search-toggler
+        	nav#site-navigation ul a
         	{
         		color: <?php echo esc_attr($st_blog_menu_text_color);?>;
         	}
-            .menu-toggler span {
-                background-color: <?php echo esc_attr($st_blog_menu_text_color);?>;
+            @media (min-width: 992px) {
+                .st-blog-header-wrap .st-blog-header-wrap-nav .st-blog-head-search-toggler {
+                    color: <?php echo esc_attr($st_blog_menu_text_color);?>;
+                }    
             }
 
         <?php }
@@ -154,12 +143,20 @@ if( ! function_exists( 'st_blog_inline_style' ) ) :
         <?php }
 
         /*custom header image check*/
-        if( !empty(get_header_image() ) )
+        $get_header_image = get_header_image();
+        if( !empty( $get_header_image ) )
         {?>
             .st-blog-header-overlay {
                 background-color: rgba(0, 0, 0, 0.5);
                 padding-top: 50px;
                 padding-bottom: 50px;
+            }
+
+            .st-blog-header-wrap .st-blog-header-wrap-nav .st-blog-head-search-toggler {
+                color: #fff;
+            }
+            .menu-toggler span {
+                background-color: #fff;
             }
 
         <?php }
