@@ -59,6 +59,12 @@ body.logo-center .st-blog-header-row .st-blog-logo-manage {
     transform: translate(0, -100%);
     transition: 0s all ease-in-out;
   }
+
+  /* search position at top */
+  .st-blog-header-wrap .st-blog-head-search {
+    position: static;
+    display: none;
+  }
 }
 /* Banner */
 section#st-blog-banner {
@@ -68,6 +74,10 @@ section#st-blog-banner {
 section#st-blog-banner .slick-slider {
   padding-bottom: 40px;
   background: #fff;
+}
+
+#st-blog-banner .st-blog-banner-slider .slick-slide .st-blog-banner-image .st-blog-banner-caption {
+  color: #333333;
 }
 
 /* #st-blog-banner .st-blog-banner-slider .slick-slide {
