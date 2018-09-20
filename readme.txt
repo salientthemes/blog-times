@@ -2,7 +2,7 @@
 
 by salient Themes
 
-Contributors: salienttheme
+Contributors: salientthemes
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, left-sidebar, right-sidebar, custom-header, blog, e-commerce, theme-options
 
 Requires at least: 4.5
@@ -58,10 +58,11 @@ Note:
 == Image used in screenshot ==
 * All images are licensed under [CC0](http://creativecommons.org/publicdomain/zero/1.0/legalcode.txt)
 
-1) https://pixabay.com/en/girl-sleep-female-woman-young-1733352/
-2) https://pixabay.com/en/wedding-dresses-fashion-bride-veil-1486256/
-3) https://pixabay.com/en/water-droplet-drop-splash-wet-1281247/
-4) https://pixabay.com/en/coffee-book-flowers-setting-2390136/
+1) https://pixabay.com/en/newyork-city-architecture-street-993604/
+2) https://pixabay.com/en/men-women-apparel-couple-people-2425121/
+3) https://pixabay.com/en/beautiful-girl-woman-young-1274056/
+4) https://pixabay.com/en/holding-hands-shoes-little-baby-918990/
+5) https://pixabay.com/en/girl-blonde-hotel-portrait-woman-3624936/
 
 
 == Changelog ==
