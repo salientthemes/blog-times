@@ -24,7 +24,7 @@ if ( !function_exists('st_blog_additional_section_main') ) :
                     if(0  != $blog_times_slecet_category_post  ) {   
                         $cat_post_array = array(
                             'post_type'           =>'post',
-                            'posts_per_page'       => 5,
+                            'posts_per_page'      => 5,
                             'cat'                 => absint($blog_times_slecet_category_post),
                             'orderby'             => 'DESC',  
                             'ignore_sticky_posts' => 1
@@ -45,10 +45,7 @@ if ( !function_exists('st_blog_additional_section_main') ) :
                           ?>
                         </ul>
                             
-                    </div>
-
-                            
-                   
+                    </div>         
                 </div>
             </div>
 
