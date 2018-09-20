@@ -65,6 +65,7 @@ section#st-blog-banner .slick-slider {
 
 #st-blog-banner .st-blog-banner-slider .slick-slide .st-blog-banner-image .st-blog-banner-caption {
   color: #333333;
+  max-width: 100%;
 }
 
 /* #st-blog-banner .st-blog-banner-slider .slick-slide {
@@ -292,7 +293,7 @@ section#st-blog-gallery {
 
 article .social-sharing #st-blog-social-icons ul {
   text-align: left;
-  margin-top: 20px;
+  margin-top: 6px;
 }
 
 .social-sharing #st-blog-social-icons ul li {
@@ -303,12 +304,12 @@ article .social-sharing #st-blog-social-icons ul {
   article.hentry {
     position: relative;
   }
+  article.hentry .read-more-text {
+    float: left;
+  }
 
   article .social-sharing {
-    position: absolute;
-    bottom: 20px;
-    right: 10px;
-    z-index: 1;
+    float: right;
   }
 }
 .st-blog-vticker-wrap {
