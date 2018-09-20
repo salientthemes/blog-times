@@ -3,10 +3,11 @@
 		// easy ticker
 		var dd = $('.st-blog-vticker').easyTicker({
 			direction: 'up',
-			interval: 4000,
+			speed: 'fast',
+			interval: 2000,
+			mousePause: 1,
 			height: 'auto',
 			visible: 1,
-			mousePause: 0,
 			controls: {
 				up: '.up',
 				down: '.down',

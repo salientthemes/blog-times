@@ -26,27 +26,6 @@ body.logo-center .st-blog-header-row .st-blog-logo-manage {
     position: absolute;
   }
 
-  body.small-header .site-header {
-    position: fixed;
-  }
-
-  body.small-header .site-header .st-blog-header-bg {
-    display: none;
-  }
-
-  body.logo-center.small-header .site-header .st-blog-header-wrap-nav {
-    transition: 0.4s all ease-in-out;
-  }
-
-  body.logo-center.small-header .site-header.nav-down .st-blog-header-wrap-nav {
-    transform: translate(0, 0);
-  }
-
-  body.logo-center.small-header .site-header.nav-up .st-blog-header-wrap-nav {
-    transform: translate(0, -100%);
-    transition: 0s all ease-in-out;
-  }
-
   /* search position at top */
   .st-blog-header-wrap .st-blog-head-search {
     position: static;
