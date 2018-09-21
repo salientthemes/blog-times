@@ -23,6 +23,12 @@ body.logo-center .st-blog-header-row .st-blog-logo-manage {
     background-color: #000000;
   }
 
+  body.logo-center nav#site-navigation ul.nav-menu > li > a,
+  body.logo-center nav#site-navigation ul.menu > li > a,
+  body.logo-center nav#site-navigation ul#menu > li > a {
+    color: #ffffff;
+  }
+
   /* Hide header on page scroll */
   body.fixed-header .site-header {
     position: absolute;
