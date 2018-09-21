@@ -1,6 +1,8 @@
 /**
  * Theme Name:     Blog Times
+ * Theme URI:	   https://www.salientthemes.com/product/st-blog/
  * Author:         salient Themes
+ * Author URI:	   http://salientthemes.com
  * Template:       st-blog
  * Text Domain:    blog-times
  * Description:    Blog Times is a ST Blog Child Theme.
@@ -32,6 +34,10 @@ body.logo-center .st-blog-header-row .st-blog-logo-manage {
     display: none;
   }
 }
+#primary {
+  max-width: 100%;
+}
+
 /* Banner */
 section#st-blog-banner {
   margin-bottom: 40px !important;
@@ -291,23 +297,6 @@ article .social-sharing #st-blog-social-icons ul {
     float: right;
   }
 }
-.st-blog-vticker-wrap {
-  background-color: #ffffff;
-  margin-bottom: 30px;
-  padding: 8px 15px;
-}
-.st-blog-vticker-wrap .st-blog-vticker:before {
-  content: '\f0a1';
-  font-family: 'Font Awesome\ 5 Free';
-  font-weight: 900;
-}
-.st-blog-vticker-wrap .st-blog-vticker ul {
-  padding-left: 28px;
-}
-.st-blog-vticker-wrap .st-blog-vticker ul li {
-  list-style: none;
-}
-
 a {
   color: gray;
 }
@@ -318,35 +307,6 @@ a {
 
 a.readmore:hover, .readmore:hover, .nav-tabs .nav-item .nav-link {
   color: #fff;
-}
-
-#primary {
-  max-width: 100%;
-}
-
-/* Three Column */
-@media (min-width: 992px) {
-  body.salient-both-sidebar .st-blog-site-content #secondary.s1 {
-    width: 360px;
-    float: left;
-    margin-left: -360px;
-  }
-  body.salient-both-sidebar .st-blog-site-content #secondary.s2 {
-    width: 260px;
-    margin-right: -260px;
-    float: left;
-    position: relative;
-    right: -100%;
-  }
-  body.salient-both-sidebar .st-blog-site-content {
-    padding-left: 360px;
-    padding-right: 260px;
-    position: relative;
-  }
-  body.salient-both-sidebar .st-blog-site-content #primary {
-    width: 100%;
-    float: right;
-  }
 }
 
 /* Featured Content - Featured Layout 2 */
