@@ -59,10 +59,6 @@ section#st-blog-banner .slick-slider {
   max-width: 100%;
 }
 
-/* #st-blog-banner .st-blog-banner-slider .slick-slide {
-    width: 490px !important;
-    left: -490px !important;
-} */
 #st-blog-banner .st-blog-banner-slider .slick-slide .st-blog-banner-image {
   background-image: none !important;
   background-color: #ffffff;
