@@ -16,17 +16,24 @@
  *Your code goes below
  */
 
+// for ticker position
+if( ! function_exists('st_blog_header_alignment') ) {
+	function st_blog_ticker_position() {
+		return 'ticker_content';
+	}
+}
+
 // for header, navigation alignment
 if( ! function_exists('st_blog_header_alignment') ) {
 	function st_blog_header_alignment() {
-		return 'nav_first';//header_first, nav_first
+		return 'nav_first';
 	}
 }
 
 // for slider alignment
 if( ! function_exists('st_blog_slider_alignment') ) {
 	function st_blog_slider_alignment() {
-		return 'content_slider';//full_width_slider, content_slider
+		return 'content_slider';
 	}
 }
 
