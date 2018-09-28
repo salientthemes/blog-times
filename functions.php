@@ -13,7 +13,7 @@
 	wp_enqueue_style( 'blog-times-style',get_stylesheet_directory_uri() . '/style.css',array('st-blog-style'));
 }
 
-if(!function_exists('blog_times_setup') :
+if(!function_exists('blog_times_setup')) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
 	 *
