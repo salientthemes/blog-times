@@ -14,8 +14,8 @@ License URI: LICENSE
 
 == Copyright ==
 
-Blog Times WordPress Theme, Copyright 2018 salient Themes
-Blog Times is distributed under the terms of the GNU GPL
+Blog Times WordPress Theme is child theme of ST Blog WordPress Theme, Copyright (C) 2018, Salient Themes
+ST Blog is distributed under the terms of the GNU GPL
 
 
 == Description ==

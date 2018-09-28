@@ -1,15 +1,37 @@
 <?php
 /**
- *Recommended way to include parent theme styles.
- *(Please see http://codex.wordpress.org/Child_Themes#How_to_Create_a_Child_Theme)
- */  
-
+ * Blog times functions and definitions.
+ *
+ * @link https://developer.wordpress.org/themes/basics/theme-functions/
+ *
+ * @package blog-times
+ */
 
   add_action( 'wp_enqueue_scripts', 'blog_times_style' );
   function blog_times_style() {
-	wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
-	wp_enqueue_style( 'child-style',get_stylesheet_directory_uri() . '/style.css',array('parent-style'));
+	wp_enqueue_style( 'st-blog-style', get_template_directory_uri() . '/style.css' );
+	wp_enqueue_style( 'blog-times-style',get_stylesheet_directory_uri() . '/style.css',array('st-blog-style'));
 }
+
+if(!function_exists('blog_times_setup') :
+	/**
+	 * Sets up theme defaults and registers support for various WordPress features.
+	 *
+	 * Note that this function is hooked into the after_setup_theme hook, which
+	 * runs before the init hook. The init hook is too late for some features, such
+	 * as indicating support for post thumbnails.
+	 */
+	function blog_times_setup() {
+
+		// Make theme available for translation.
+		load_theme_textdomain( 'blog-times', get_stylesheet_directory() . '/languages' );
+	}
+
+endif;
+
+add_action( 'after_setup_theme', 'blog_times_setup' );
+
+
 
 
 /**
@@ -50,6 +72,7 @@ if ( ! function_exists( 'st_blog_additional_class' ) ) {
 // theme name
 if ( ! function_exists ( 'st_blog_theme_name' ) ) {
 	function st_blog_theme_name() {
-		return 'Blog Times';
+		return esc_html__('Blog Times');
 	}
 }
+
