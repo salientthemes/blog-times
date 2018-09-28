@@ -53,22 +53,3 @@ if ( ! function_exists ( 'st_blog_theme_name' ) ) {
 		return 'Blog Times';
 	}
 }
-
-// for additional article
-if ( ! function_exists ( 'st_blog_additional_article' ) ) {
-	function st_blog_additional_article() {
-		?>
-		<div class="additional-sections">
-			<div class="social-sharing">
-				<div id="st-blog-social-icons">
-					<ul>
-						<li><a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink();?>" target="_blank"></a></li>
-						<li><a href="https://twitter.com/home?status=<?php the_permalink();?>" target="_blank"></a></li>
-						<li><a href="https://plus.google.com/share?url=<?php the_permalink();?>" target="_blank"></a></li>
-					</ul>
-				</div>
-			</div>
-		</div>
-		<?php
-	}
-}

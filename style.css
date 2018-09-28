@@ -74,6 +74,10 @@ body.logo-center.admin-bar .st-blog-big-logo-nav {
     padding: 20px;
   }
 
+  .menu-toggler span {
+    background-color: #ffffff;
+  }
+
   .menu-toggler span:nth-child(1) {
     display: none;
   }
@@ -383,9 +387,12 @@ section#st-blog-gallery {
 }
 
 .post-navigation a, .posts-navigation a {
-  background-color: transparent;
+  background-color: transparent !important;
   color: #333;
   padding: 0;
+}
+.post-navigation a:hover, .posts-navigation a:hover {
+  color: #000;
 }
 
 .post-navigation .nav-previous a:before, .posts-navigation .nav-previous a:before {
