@@ -74,7 +74,7 @@ if ( ! function_exists( 'st_blog_additional_class' ) ) {
 // theme name
 if ( ! function_exists ( 'st_blog_theme_name' ) ) {
 	function st_blog_theme_name() {
-		return esc_html__('Blog Times');
+		return esc_html__('Blog Times', 'blog-times');
 	}
 }
 
