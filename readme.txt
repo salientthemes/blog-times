@@ -23,7 +23,7 @@ ST Blog is distributed under the terms of the GNU GPL
 
 == Description ==
 
-Blog Times is a ST Blog Child Theme.
+Blog Times is a clean and minimal child theme of ST blog. It focus on clean design and powerful features that lets you write articles and blog posts. This theme is fully responsive that adjust with all small to large devices. You can find more sections like Header Section, News Ticker, Custom Menu, Logo options, Featured Slider, Three Columns, Left Sidebar, Right Sidebar, Full width Footer options etc.
 
 == Installation ==
 
