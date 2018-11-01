@@ -7,7 +7,7 @@ Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-com
 
 Requires at least: 4.5
 Tested up to: 4.9.6
-Stable tag: 1.0.0
+Stable tag: 1.0.1
 License: GNU General Public License v2 or later
 License URI: LICENSE
 
@@ -39,21 +39,6 @@ Author: 2012-2017 Automattic
 Source: http://underscores.me
 License: GPLv2 or later](https://www.gnu.org/licenses/gpl-2.0.html)
 
-normalize:
-Author: 2012-2016 Nicolas Gallagher and Jonathan Neal
-Source: http://necolas.github.io/normalize.css
-License: [MIT](https://opensource.org/licenses/MIT)
-
-bootstrap:
-Author: The Bootstrap Authors
-Source: http://getbootstrap.com
-License: Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
-
-slick:
-Author: Ken Wheeler
-Source: http://github.com/kenwheeler/slick
-License: Licensed MIT
-
 
 Note:
 	If your Image is not align properly, then you can try regenerate thumbnails. So that it can fit on required image size.
@@ -66,9 +51,16 @@ Note:
 3) https://pixabay.com/en/beautiful-girl-woman-young-1274056/
 4) https://pixabay.com/en/holding-hands-shoes-little-baby-918990/
 5) https://pixabay.com/en/girl-blonde-hotel-portrait-woman-3624936/
+6) https://pixabay.com/en/business-man-beautiful-man-business-1385050/
 
 
 == Changelog ==
+
+= - 1.0.1 - =
+* Fixed: Image licence issue and readme file updated.
+* Fixed: CSS updated for long title and sticky post.
+* Fixed: Featured section for missing image.
+* Fixed: Navigation and scroll issue.
 
 = - 1.0.0 - =
 * Initial release.

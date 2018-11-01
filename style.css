@@ -6,7 +6,7 @@
  * Template:       st-blog
  * Text Domain:    blog-times
  * Description:    Blog Times is a clean and minimal child theme of ST blog. It focus on clean design and powerful features that lets you write articles and blog posts. This theme is fully responsive that adjust with all small to large devices. You can find more sections like Header Section, News Ticker, Custom Menu, Logo options, Featured Slider, Three Columns, Left Sidebar, Right Sidebar, Full width Footer options etc.
- * Version:        1.0.0
+ * Version:        1.0.1
  * License:        GNU General Public License v3 or later
  * License URI:    http://www.gnu.org/licenses/gpl-3.0.html
  * Tags:           custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, left-sidebar, right-sidebar, custom-header, blog, e-commerce, theme-options
@@ -49,7 +49,7 @@ body.logo-center .st-blog-big-logo-nav {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 999;
+  z-index: 9999;
 }
 
 body.logo-center.admin-bar .st-blog-big-logo-nav {
@@ -170,6 +170,10 @@ body.logo-center.admin-bar .st-blog-big-logo-nav {
     margin-bottom: 0;
   }
 }
+body.small-header header.site-header .st-blog-vticker-wrap, body.small-header header.site-header .st-blog-header-bg {
+  display: block;
+}
+
 #primary {
   max-width: 100%;
 }
@@ -273,6 +277,12 @@ a.readmore, .readmore {
   box-shadow: none !important;
   border: 0;
   background: #ffffff !important;
+}
+
+#st-blog-featured .st-blog-featured-item .st-blog-featured-image,
+#st-blog-featured .st-blog-featured-item {
+  min-height: 200px;
+  background-color: #000 !important;
 }
 
 article,
@@ -442,6 +452,20 @@ a {
 
 a.readmore:hover, .readmore:hover, .nav-tabs .nav-item .nav-link {
   color: #fff;
+}
+
+/* title */
+.page-title, .entry-title, .widget-title, .widgettitle, .dark-theme-coloured .widget-title, .dark-theme-coloured .widgettitle, .post-navigation a, .posts-navigation a {
+  -ms-word-wrap: break-word;
+  word-wrap: break-word;
+}
+
+.post-navigation a, .posts-navigation a {
+  display: inline;
+}
+
+.box-layout .st-blog-item article.sticky {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2) !important;
 }
 
 /* Featured Content - Featured Layout 2 */
